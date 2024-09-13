@@ -49,7 +49,7 @@ def predict():
         return render_template('result.html', prediction=prediction[0])
     
     except Exception as e:
-        # Return the error message to help with debugging
+        # Return the error message to help with debugging 
         return f"An error occurred: {str(e)}"
 
 if __name__ == '__main__':
