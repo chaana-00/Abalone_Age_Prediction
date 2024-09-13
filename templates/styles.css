@@ -1,0 +1,61 @@
+/* styles.css */
+
+/* Custom purple theme */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.bg-primary {
+    background-color: #6f42c1 !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #e3e3e3 !important;
+}
+
+/* Background image for both pages */
+.bg-image {
+    background-image: url('../images/oceanic abalone.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #6f42c1; /* Purple color for headings */
+}
+
+.lead {
+    color: #333; /* Dark gray text */
+}
+
+.btn-primary {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+
+.btn-primary:hover {
+    background-color: #5a2e91;
+    border-color: #4e1d76;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rounded {
+    border-radius: .25rem;
+}

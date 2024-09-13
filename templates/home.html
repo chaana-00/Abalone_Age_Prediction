@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abalone Age Prediction</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Abalone Predictor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/result">Prediction Result</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-image">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-8 col-lg-6">
+                <h1 class="text-center mb-4 text-black">Abalone Age Prediction</h1>
+                <form action="/predict" method="post" class="bg-white p-4 rounded shadow">
+                    <div class="form-group">
+                        <label for="Sex">Sex:</label>
+                        <select class="form-control" name="Sex" id="Sex">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Infant">Infant</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Length">Length:</label>
+                        <input type="text" class="form-control" id="Length" name="Length">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Diameter">Diameter:</label>
+                        <input type="text" class="form-control" id="Diameter" name="Diameter">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Height">Height:</label>
+                        <input type="text" class="form-control" id="Height" name="Height">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Whole_weight">Whole weight:</label>
+                        <input type="text" class="form-control" id="Whole_weight" name="Whole_weight">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Whole_weight_1">Whole weight 1:</label>
+                        <input type="text" class="form-control" id="Whole_weight_1" name="Whole_weight_1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Whole_weight_2">Whole weight 2:</label>
+                        <input type="text" class="form-control" id="Whole_weight_2" name="Whole_weight_2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Shell_weight">Shell weight:</label>
+                        <input type="text" class="form-control" id="Shell_weight" name="Shell_weight">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Predict</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
