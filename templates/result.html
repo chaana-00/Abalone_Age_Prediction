@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="home.html">Abalone Age Predictor</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,14 +30,29 @@
 
     <div class="container mt-5">
         <h1 class="text-center mb-4">Prediction Result</h1>
-        <p class="lead text-center">The predicted number of rings (which indicates the age) is: <strong>{{ prediction }}</strong></p>
+        <p class="lead text-center">The predicted number of rings (which indicates the age) is: <strong>{{ prediction
+                }}</strong></p>
         <div class="text-center">
             <a href="/" class="btn btn-primary btn-lg">Make another prediction</a>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Abalone Age Predictor | All rights reserved</p>
+            <p>Developed by Chanaka Bandara</p>
+            <a href="https://github.com/chaana-00" target="_blank" class="text-white mx-2">GitHub</a>
+            <a href="https://www.linkedin.com/in/chaana00/" target="_blank" class="text-white mx-2">LinkedIn</a>
+            <a href="/" class="text-white mx-2">Contact Us</a>
+        </div>
+    </footer>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
